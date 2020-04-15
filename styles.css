@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.menu {
+    background: linear-gradient(rgb(92, 189, 245), rgba(179, 229, 238, 0.144));
+    width: 1024px;
+    height: 600px;
+    margin: auto;
+    /* display: flex;
+    justify-content: center;
+    padding: 20px; */
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+h3{
+    font-size: 150%;
+}
+.calc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inc-exp-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.inc-exp-container div {
+    width: 200px;
+    margin: 10px;
+}
+.total-left-container {
+    margin: auto;
+}
+
+.add-new {
+    width: 500px;
+    margin: 15px auto;
+
+}
+#total__income {
+    color: blue;
+}
+#total__expense{
+    color: red;
+}
+#total_left {
+    color: green;
+}
+
+.select-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+select, input {
+    background-color: white;
+    border: 2px solid rgb(2, 125, 47);
+}
+#addBtn {
+    color: rgb(0, 91, 41);
+    cursor: pointer;
+}
+#addBtn:hover{
+    color: rgb(40, 158, 29);
+}
+
+.list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+li {
+    list-style: none;
+    
+}
+
+.inc-list {
+    color: green;
+  
+}
+.exp-list {
+    color: red;
+    
+}
+.delete-item {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+    float: right;
+    position: fixed;
+    display: none;
+}
+
+li:hover  .delete-item{
+    display: inline-block;
+}
+
+@media (max-width: 767px){
+    .menu{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .add-new {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* .delete-item{
+        display: inline-block;
+    } */
+}

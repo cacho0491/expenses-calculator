@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Expenses Calculator</h1>
+        <div class="menu">
+
+            <div class="calc-container">
+                <div class="inc-exp-container">
+                    <div>
+                        <h3 id="total__income">£0</h3>
+                        <p>Total Income</p>
+                    </div>
+                    <div>
+                        <h3 id="total__expense">£0</h3>
+                        <p>Total Expenses</p>
+                    </div>
+                </div>
+                <div class="total-left-container">
+                    <h3 id="total_left">£0</h3>
+                    <p>Left</p>
+                </div>
+            </div>
+
+            
+                <!-- add item -->
+            <div class="add-new">
+                <div class="select-item">
+                    <p>Add a: </p>
+                    <select id="type" name="type" onchange="typeSelection(this)">
+                        
+                        <option id="inc" value="income">Income</option>
+                        <option id="exp" value="expense">Expense</option>
+                    </select>
+
+                </div>
+                
+                <input id="type_name" value="" type="text" placeholder="Name">
+                <input id="type_price" value="" type="number" placeholder="Price">
+                <button onclick="addItem()" id="addBtn">ADD</button>
+            </div>
+                <!-- <div class="expense">
+                    <h3>EXPENSE</h3>
+                    <input id="expense__name" type="text" placeholder="name">
+                    <input id="expense__price" type="number" placeholder="price">
+                    <button id="expense__addBtn">ADD</button>
+                </div> -->
+            
+            
+        
+            <div class="list">
+                <div class="inc-list">
+                    <h2>Income</h2>
+                    <ul id="inc_elements">
+                        <!-- <li><button class="delete-item">-</button>Rojo</li> -->
+                      
+                    </ul>
+                </div>
+                <div class="exp-list">
+                    <h2>Expenses</h2>
+                    <ul id="exp_elements">
+                        <!-- <li><button class="delete-item">-</button> Verde</li> -->
+                       
+                    </ul>
+
+                </div>
+            
+            </div>
+        </div>
+        
+    <script src="script.js"></script>
+    </body>
+</html>
